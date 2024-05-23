@@ -3,22 +3,29 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: cadetblue;
 }
 header {
   padding: 1rem;
   height: 5rem;
+  background-color: aquamarine;
   display: flex;
   align-items: center;
 }
-header h1 {
+header {
   height: 3rem;
+  text-decoration: none;
+}
+h1 a {
+  text-decoration: none;
 }
 nav {
-  margin-left: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 ul {
   padding: 5px;
+  margin-left: auto;
   list-style: none;
   display: flex;
 }
