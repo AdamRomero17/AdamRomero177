@@ -17,6 +17,7 @@ header {
 }
 h1 a {
   text-decoration: none;
+  text-shadow: rgb(42, 53, 53);
 }
 nav {
   width: 100%;
@@ -33,4 +34,12 @@ li a {
   padding: 5px;
   text-decoration: none;
   color: white;
+}
+main {
+  padding: 5rem;
+  display: flex;
+}
+.profileimage {
+  margin-left: auto;
+  height: 18rem;
 }
