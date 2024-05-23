@@ -1,3 +1,29 @@
-body{
+body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: cadetblue;
+}
+header {
+  padding: 1rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  height: 3rem;
+}
+nav {
+  margin-left: auto;
+}
+ul {
+  padding: 5px;
+  list-style: none;
+  display: flex;
+}
+li a {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
 }
