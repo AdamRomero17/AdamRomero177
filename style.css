@@ -1,8 +1,8 @@
 body {
+  height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
 }
 header {
   padding: 1rem;
@@ -16,6 +16,8 @@ header {
   text-decoration: none;
 }
 h1 a {
+  font-size: 2rem;
+  color: rgb(31, 8, 8);
   text-decoration: none;
   text-shadow: rgb(42, 53, 53);
 }
@@ -32,14 +34,23 @@ ul {
 }
 li a {
   padding: 5px;
+  color: black;
+  font-size: 20px;
   text-decoration: none;
-  color: white;
 }
 main {
-  padding: 5rem;
+  height: calc(100vh - 5rem);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .profileimage {
-  margin-left: auto;
-  height: 18rem;
+  height: 17rem;
 }
