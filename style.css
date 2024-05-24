@@ -43,6 +43,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 5rem;
 }
 .intro {
@@ -53,4 +54,11 @@ main {
 }
 .profileimage {
   height: 17rem;
+}
+section {
+  height: 50vh;
+  margin: 2rem;
+}
+footer {
+  min-height: 50vh;
 }
