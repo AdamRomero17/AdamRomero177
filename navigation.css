@@ -24,3 +24,9 @@ li a {
 li :hover {
   color: rgb(137, 190, 84);
 }
+
+@media all and (max-width: 500px) {
+  ul {
+    display: none;
+  }
+}
