@@ -7,8 +7,16 @@
   </head>
   <body>
     <div class="container">
-      <form class="message">
-        <input type="text" placeholder="Name" />
+      <form>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="email" placeholder="Email" required />
+        <input type="text" id="phone" placeholder="Phone number" required />
+        <textarea
+          name=""
+          id="message"
+          rows="4"
+          placeholder="Message me"
+        ></textarea>
       </form>
       <div class="figures"></div>
     </div>
