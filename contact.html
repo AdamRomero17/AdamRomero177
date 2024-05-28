@@ -4,21 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="Style/contactStyle.css" />
   </head>
   <body>
     <div class="container">
       <form>
-        <input type="text" id="name" placeholder="Name" required />
-        <input type="text" id="email" placeholder="Email" required />
-        <input type="text" id="phone" placeholder="Phone number" required />
+        <input
+          type="text"
+          class="textarea"
+          id="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="text"
+          class="textarea"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="text"
+          class="textarea"
+          id="phone"
+          placeholder="Phone number"
+          required
+        />
         <textarea
           name=""
           id="message"
           rows="4"
           placeholder="Message me"
         ></textarea>
+        <button type="submit">Send</button>
       </form>
-      <div class="figures"></div>
+      <div class="figures">hello</div>
     </div>
   </body>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function emailsubmit() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "username",
+        Password: "password",
+        To: "them@website.com",
+        From: "you@isp.com",
+        Subject: "This is the subject",
+        Body: "And this is the body",
+      }).then((message) => alert(message));
+    }
+  </script>
 </html>
