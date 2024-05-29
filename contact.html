@@ -22,19 +22,20 @@
       </form>
       <div class="figures">hello</div>
     </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "jhonadamabecillaromero@gmail.com",
+          Password: "password..123457",
+          To: "romerojhonadamabecilla@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New contact from ",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
   </body>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail() {
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "jhonadamabecillaromero@gmail.com",
-        Password: "password..123457",
-        To: "romerojhonadamabecilla@gmail.com",
-        From: document.getElementById("email").value,
-        Subject: "Email form client",
-        Body: "And this is the body",
-      }).then((message) => alert(message));
-    }
-  </script>
 </html>
