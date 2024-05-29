@@ -37,6 +37,20 @@ section {
   height: 50vh;
   padding: 2rem;
 }
+#Projects {
+  display: flex;
+  flex-direction: column;
+}
+#Projects h4 {
+  display: flex;
+  justify-content: center;
+}
+.conproj {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 footer {
   padding: 2rem;
 }

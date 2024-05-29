@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <form>
+      <form onsubmit="sendEmail(); reset">
         <input type="text" id="name" placeholder="Name" required />
         <input type="text" id="email" placeholder="Email" required />
         <input type="text" id="phone" placeholder="Phone number" required />
@@ -25,14 +25,14 @@
   </body>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
-    function emailsubmit() {
+    function sendEmail() {
       Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "username",
-        Password: "password",
-        To: "them@website.com",
-        From: "you@isp.com",
-        Subject: "This is the subject",
+        Host: "smtp.gmail.com",
+        Username: "jhonadamabecillaromero@gmail.com",
+        Password: "password..123457",
+        To: "romerojhonadamabecilla@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: "Email form client",
         Body: "And this is the body",
       }).then((message) => alert(message));
     }
