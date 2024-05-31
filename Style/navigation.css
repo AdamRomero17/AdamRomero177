@@ -31,6 +31,15 @@ li :hover {
   color: rgb(137, 190, 84);
 }
 
+/*Aside*/
+aside {
+  width: 20rem;
+  background-color: cadetblue;
+}
+aside ul {
+  display: ;
+}
+
 @media all and (max-width: 600px) {
   ul {
     display: none;
