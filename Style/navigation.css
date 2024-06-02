@@ -36,8 +36,21 @@ aside {
   width: 20rem;
   background-color: cadetblue;
 }
-aside ul {
-  display: ;
+#sidebar {
+  font-size: 5rem;
+  padding: 1rem;
+  /*display: none;*/
+  position: fixed;
+  height: 100%;
+  width: 15rem;
+  top: 0;
+  right: 0;
+}
+#sidebar ul {
+  height: auto;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 @media all and (max-width: 600px) {

@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="Style/style.css" />
     <link rel="stylesheet" href="Style/navigation.css" />
+    <script src="asidenav.js"></script>
   </head>
   <body>
     <header>
@@ -21,15 +22,7 @@
         </ul>
         <div></div>
       </nav>
-      <aside>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </aside>
+
       <div class="introcon">
         <div class="intro">
           <p>Hi! I'm</p>
@@ -43,6 +36,16 @@
         />
       </div>
     </header>
+
+    <aside id="sidebar" class="sidebar show-sidebar">
+      <ul>
+        <li><img src="Images/close.png" alt="" /></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </aside>
 
     <section id="Projects">
       <h4>Projects</h4>
