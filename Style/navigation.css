@@ -38,20 +38,24 @@ li :hover {
   cursor: pointer;
 }
 .sidebar-toggle :hover {
-  background-color: cadetblue;
+  background-color: rgb(10, 134, 136);
+  border-radius: 5px;
 }
 .sidebar-toggle img {
   height: 2rem;
 }
 /*Aside*/
 .sidebar {
+  height: 100vh;
   width: 20rem;
-  background-color: cadetblue;
-  font-size: 5rem;
-  padding: 1rem;
+  background-color: rgba(
+    209,
+    211,
+    214,
+    0.459
+  ); /*value from 0.0 - 1.0. The lower value, the more transparent*/
+  backdrop-filter: blur(5px);
   position: fixed;
-  height: 100%;
-  width: 15rem;
   top: 0;
   left: 0;
   transition: all 0.3s linear;
@@ -60,14 +64,28 @@ li :hover {
 .show-sidebar {
   transform: translate(0);
 }
-.sidebar ul {
-  height: auto;
+.close-Button {
+  height: 2rem;
   display: flex;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar ul {
+  height: calc(100vh - 10rem);
+  display: flex;
   flex-direction: column;
 }
+.sidebar ul li {
+  height: 5rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.sidebar ul li:hover {
+  background-color: aliceblue;
+}
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .logoname {
     display: none;
   }
@@ -78,7 +96,7 @@ li :hover {
     display: none;
   }
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 700px) {
   .sidebar-toggle {
     display: none;
   }
