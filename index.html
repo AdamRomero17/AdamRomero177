@@ -3,28 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="Style/style.css" />
     <link rel="stylesheet" href="Style/navigation.css" />
+    <title>Home Page</title>
   </head>
   <body>
+    <nav>
+      <img src="Images/ARlogo.png" alt="Adam Remero image" />
+      <h1 class="logoname"><a href="">AdamRomeroTech</a></h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+      </ul>
+      <a href="contact.html" class="contactBtn">Contact</a>
+      <a class="sidebar-toggle">
+        <img src="Images/menu.png" alt="sidebarxc" />
+      </a>
+    </nav>
+    
     <header>
-      <nav>
-        <img src="/Images/ARlogo.png" alt="Adam Remero image" />
-        <h1 class="logoname"><a href="">AdamRomeroTech</a></h1>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Project</a></li>
-        </ul>
-          <a href="contact.html" class="contactBtn">Contact</a>
-        <a class="sidebar-toggle">
-          <img src="Images/menu.png" alt="sidebarxc  " />
-        </a>
-      </nav>
-
       <div class="introcon">
         <div class="intro">
           <p>Hi! I'm</p>
@@ -41,7 +41,7 @@
 
     <aside class="sidebar">
       <ul>
-        <li><button class="close-Button">
+        <li><button class="close-Button" title="close">
           <img src="Images/close.png" alt="" class="close-Button" /></li>
         </button>
         <li><a href="#">Blog</a></li>
@@ -51,6 +51,9 @@
       <button><a href="contact.html">Contact</a></button>
     </aside>
 
+    <section id="journey">
+      <h2>My Journey as Self-taught Programmer</h2>
+    </section>
     <section id="Projects">
       <h4>Projects</h4>
       <div class="conproj">
@@ -77,6 +80,6 @@
       <p>subscribe</p>
     </footer>
 
-    <script src="/javascript/asidenav.js"></script>
+    <script src="javascript/asidenav.js"></script>
   </body>
 </html>
