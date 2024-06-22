@@ -3,27 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="Style/style.css" />
     <link rel="stylesheet" href="Style/navigation.css" />
     <title>Home Page</title>
   </head>
   <body>
     <nav>
-      <img src="Images/ARlogo.png" alt="Adam Remero image" />
-      <h1 class="logoname"><a href="">AdamRomeroTech</a></h1>
+      <img src="Images/ARlogo.png" class="logoimg" alt="Adam Remero image" />
+      <h1 class="logoname"><a href="">Adam Romero</a></h1>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Project</a></li>
+        <li></li>
       </ul>
-      <a href="contact.html" class="contactBtn">Contact</a>
-      <a class="sidebar-toggle">
-        <img src="Images/menu.png" alt="sidebarxc" />
-      </a>
+      <div class="con">
+        <a href="contact.html" class="contactBtn">Contact Me</a>
+      </div>
+      <button class="sidebar-toggle">
+        <img src="Images/menu.png" class="menu" alt="sidebarxc" />
+      </button>
     </nav>
-    
+
     <header>
       <div class="introcon">
         <div class="intro">
@@ -41,18 +44,27 @@
 
     <aside class="sidebar">
       <ul>
-        <li><button class="close-Button" title="close">
-          <img src="Images/close.png" alt="" class="close-Button" /></li>
-        </button>
+        <li>
+          <button title="close" class="close">
+            <img src="Images/close.png" alt="" class="close-Button" />
+          </button>
+        </li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Project</a></li>
       </ul>
-      <button><a href="contact.html">Contact</a></button>
+      <button><a href="contact.html">Contact Me</a></button>
     </aside>
 
-    <section id="journey">
-      <h2>My Journey as Self-taught Programmer</h2>
+    <section id="sec-1">
+      <div class="right-side">
+        <h2>My Journey as Self-taught Programmer</h2>
+        <p>
+          Learing by your self is challenging but it gives more lesson and
+          experience.
+        </p>
+      </div>
+      <div class="right-side"></div>
     </section>
     <section id="Projects">
       <h4>Projects</h4>

@@ -9,7 +9,7 @@ nav {
   align-items: center;
   gap: 3rem;
 }
-img {
+.logoimg {
   height: 5rem;
 }
 h1 a {
@@ -34,23 +34,25 @@ li a {
 li :hover {
   color: rgb(137, 190, 84);
 }
+.btns {
+  margin-left: auto;
+}
+.con :hover {
+  box-shadow: /*inset*/ 0px 0px 5px 5px rgb(0, 0, 0, 0.5); /*Use camma ',' to add multiple shadow*/
+}
 .contactBtn {
   padding: 3px;
   border-radius: 7px;
   font-size: 2em;
-  color: rgb(37, 101, 121);
-  background-color: cadetblue;
+  color: rgb(15, 15, 15);
 }
 .sidebar-toggle {
-  background-color: transparent;
-  border: none;
-  border-radius: 10px;
   margin-left: auto;
-  cursor: pointer;
-}
-.sidebar-toggle :hover {
-  background-color: rgb(10, 134, 136);
-  border-radius: 5px;
+  border: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sidebar-toggle img {
   height: 2rem;
@@ -75,11 +77,11 @@ li :hover {
 .show-sidebar {
   transform: translate(0);
 }
+.close {
+  border: none;
+}
 .close-Button {
   height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .sidebar ul {
   height: calc(100vh - 10rem);
