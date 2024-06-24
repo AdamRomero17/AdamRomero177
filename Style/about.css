@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  scroll-behavior: smooth; /* Automatic Smooth scroll for Anchor Links*/
+  scroll-padding: 4rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header {
+  height: calc(100 - 4rem);
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+.introcon {
+  height: calc(100vh - 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profileimage {
+  min-width: 2rem;
+  border-radius: 10px;
+}
+
+/* Main */
+main {
+  padding: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Sections */
+section {
+  height: calc(100vh - 4rem);
+  padding: 5%;
+}
+/* Footer */
+footer {
+  padding: 2rem;
+}
+.Contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.imgIcon {
+  border-top: 3px solid black;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.icon {
+  height: 1.5rem;
+}

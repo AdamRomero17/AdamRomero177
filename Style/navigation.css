@@ -38,7 +38,7 @@ li :hover {
   margin-left: auto;
 }
 .con :hover {
-  box-shadow: /*inset*/ 0px 0px 5px 5px rgb(0, 0, 0, 0.5); /*Use camma ',' to add multiple shadow*/
+  box-shadow: /*inset*/ 0px 0px 5px 5px rgb(0, 0, 0, 0.5); /*Use camma ',' to add multiple shadow color*/
 }
 .contactBtn {
   padding: 3px;
