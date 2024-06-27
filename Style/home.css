@@ -1,6 +1,6 @@
 :root {
-  --clr-60: rgb(27, 27, 27);
-  --clr-30: rgb(114, 127, 128);
+  --clr-60: rgb(0, 0, 0);
+  --clr-30: rgb(14, 14, 14);
   --clr-10: rgb(255, 255, 255);
 }
 * {
@@ -75,6 +75,9 @@ main {
 section {
   height: calc(100vh - 4rem);
   padding: 5%;
+}
+#sec-1 {
+  background-color: var(--clr-30);
 }
 /* Footer */
 footer {

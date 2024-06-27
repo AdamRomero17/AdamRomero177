@@ -1,3 +1,7 @@
+:root {
+  --bkg-gray1: rgb(19, 20, 20);
+  --bkg-gray2: rgb(18, 32, 29);
+}
 .nav {
   height: 4rem;
   width: 100%;
@@ -14,7 +18,9 @@
   color: rgb(255, 255, 255);
 }
 .logoimg {
-  height: 5rem;
+  max-width: 3rem;
+  background-color: white;
+  border-radius: 7px;
 }
 h1 a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -33,14 +39,21 @@ ul {
   list-style: none;
   display: flex;
 }
+li {
+  min-width: 2rem;
+}
+/* li :hover {
+  background-color: var(--bkg-gray1);
+  border-radius: 7px;
+} */
+/* .hoverA :hover {
+  background-color: var(--bkg-gray2);
+} */
 li a {
   padding: 5px;
   font-size: 20px;
   text-decoration: none;
-  color: white;
-}
-li :hover {
-  color: rgb(137, 190, 84);
+  color: rgb(0, 0, 0);
 }
 .btns {
   margin-left: auto;
@@ -52,7 +65,7 @@ li :hover {
   padding: 3px;
   border-radius: 7px;
   font-size: 2em;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .sidebar-toggle {
   margin-left: auto;
