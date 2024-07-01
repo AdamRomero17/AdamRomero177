@@ -3,7 +3,7 @@
   --bkg-gray2: rgb(18, 32, 29);
 }
 .nav {
-  height: 4rem;
+  height: 3rem;
   width: 100%;
   padding: 0.5rem;
   background-color: rgb(0, 0, 0);
@@ -70,7 +70,7 @@ li a {
 .sidebar-toggle {
   margin-left: auto;
   border: none;
-  background-color: white;
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;

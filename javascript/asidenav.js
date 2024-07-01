@@ -18,15 +18,17 @@ closeBtn.addEventListener("click", function(){
     sidebar.classList.remove('show-sidebar')
 })
 
-/* Changing color of nav when screen being scroll */
+/* Changing color and changing image for Menu of nav when screen being scroll */
 window.addEventListener('scroll', function() {
     const colorChangeElement = document.querySelector('.nav');
     const logoN = document.querySelector('.logoname')
     const scrolling = window.scrollY;
     if(scrolling > 0){
+        document.querySelector('.menu').src ='Images/MenuWhite.png'
         colorChangeElement.classList.remove('scroll');
         logoN.classList.remove('logonameWhite');
     }else{
+        document.querySelector('.menu').src ='Images/MenuBlack.png'
         colorChangeElement.classList.add('scroll');
         logoN.classList.add('logonameWhite');
     }
