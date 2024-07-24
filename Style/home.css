@@ -1,7 +1,9 @@
 :root {
   --clr-60: rgb(0, 0, 0);
-  --clr-30: rgb(14, 14, 14);
+  --clr-30: rgb(24, 25, 26);
   --clr-10: rgb(255, 255, 255);
+  --padding: 2rem;
+  --section-height: calc(100vh - 3rem);
 }
 * {
   box-sizing: border-box;
@@ -16,72 +18,84 @@ body {
   margin: 0;
   padding: 0;
 }
-header {
-  height: calc(100vh - 4rem);
-  padding: 1rem;
-  /* border: 10px solid wheat; */
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5rem;
-}
-a {
-  text-decoration: none;
-}
 
-.intro {
-  flex: 1;
-  text-align: center;
+header {
+  height: var(--section-height);
+  padding: var(--padding);
+  /* border: 10px solid wheat; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+@media all and (max-width: 700px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+.headerCard {
+  height: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.intro h1 {
-  flex: 1;
-  font-size: 10vw;
+.name {
+  font-size: clamp(1rem, 8vw, 7rem);
+}
+.name::before {
+  content: "Hi I'm";
+  font-size: clamp(1rem, 2vw, 3rem);
+  display: block;
+}
+.image-container {
 }
 .profileimage {
-  min-width: 3rem;
-  /* width: max(40%, 10rem); */
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
 }
 
 /* Main */
 main {
-  padding: 3%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  padding: var(--padding);
+  height: var(--section-height);
+  background-color: rgb(70, 68, 68);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.main-card {
+@media all and (max-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+.maincards {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-.left-side {
-  flex: 2;
-  min-width: 10rem;
+.mainLeftSide {
 }
-.right-side {
-  flex: 1;
-  min-width: 5rem;
+.main-image {
+  width: min(35rem, 80%);
 }
 /* Sections */
 section {
-  height: calc(100vh - 4rem);
+  height: var(--section-height);
   padding: 5%;
 }
 #sec-1 {
   background-color: var(--clr-30);
 }
+
 /* Footer */
 footer {
   padding: 2rem;
+  background-color: var(--clr-30);
 }
 .Contact {
   display: flex;

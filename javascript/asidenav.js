@@ -34,6 +34,7 @@ window.addEventListener('scroll', function() {
     }
     // colorChangeElement.style.backgroundColor = 'red'; // Change color to red when scrolling
 });
+
 window.addEventListener('scroll', function() {
     const whiteF = document.querySelectorAll('.whiteFont')
     const scrolling = window.scrollY;
