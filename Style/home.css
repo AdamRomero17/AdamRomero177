@@ -4,6 +4,7 @@
   --clr-10: rgb(255, 255, 255);
   --padding: 2rem;
   --section-height: calc(100vh - 3rem);
+  --global-fontSize: 1rem;
 }
 * {
   box-sizing: border-box;
@@ -18,7 +19,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+p {
+  font-size: var(--global-fontSize);
+}
 header {
   height: var(--section-height);
   padding: var(--padding);
@@ -50,6 +53,7 @@ header {
   font-size: clamp(1rem, 2vw, 3rem);
   display: block;
 }
+
 .image-container {
 }
 .profileimage {
@@ -83,13 +87,31 @@ main {
 .main-image {
   width: min(35rem, 80%);
 }
+
 /* Sections */
 section {
-  height: var(--section-height);
+  /* height: var(--section-height); */
   padding: 5%;
 }
 #sec-1 {
   background-color: var(--clr-30);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.sec1Cards {
+  background-color: rgb(52, 53, 53);
+  padding: 1rem;
+  border-radius: 5px;
+  width: 15rem;
+  display: block;
+}
+.sec1ImgContainer {
+  border: 5px solid red;
+  height: 20rem;
+  width: auto;
 }
 
 /* Footer */
