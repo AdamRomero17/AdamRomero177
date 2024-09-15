@@ -4,14 +4,8 @@ const closeBtn = document.querySelector(".close-Button");
 const sidebar = document.querySelector(".sidebar");
 
 toggleBtn.addEventListener("click", function (){
-   console.log(sidebar.classList);
-//if(sidebar.classList.contains('show-sidebar')){
-//    sidebar.classList.remove('show-sidebar')
-//}
-//else{
-//    sidebar.classList.add('show-sidebar')
-//}
-sidebar.classList.toggle('show-sidebar')
+    console.log(sidebar.classList);
+    sidebar.classList.toggle('show-sidebar')
 });
 //debugger
 closeBtn.addEventListener("click", function(){
